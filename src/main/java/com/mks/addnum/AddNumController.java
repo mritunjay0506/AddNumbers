@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AddNumController {
 	@RequestMapping ("getAddedValue/{num1}/{num2}")
 	public int getAddedValue() {
-		
-		
+				
 		return 5;
 		
 	}
