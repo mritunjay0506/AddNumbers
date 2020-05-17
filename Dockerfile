@@ -12,8 +12,8 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR AddNumbers
 
-ADD /target/addnumbers.jar addnumbers.jar
+ADD /target/AddNumbers-0.0.1-SNAPSHOT.jar AddNumbers-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java", "-jar", "addnumbers.jar"]
+ENTRYPOINT ["java", "-jar", "AddNumbers-0.0.1-SNAPSHOT.jar"]
 
 EXPOSE 8003
