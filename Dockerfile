@@ -12,8 +12,8 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR AddNumbers
 
-COPY --from=MAVEN_BUILD /build/target/docker-boot-intro-0.1.0.jar
+COPY --from=MAVEN_BUILD /build/target/addnumbers.jar /app/
 
-ENTRYPOINT ["java", "-jar", "docker-boot-intro-0.1.0.jar"]
+ENTRYPOINT ["java", "-jar", "addnumbers.jar"]
 
 EXPOSE 8003
