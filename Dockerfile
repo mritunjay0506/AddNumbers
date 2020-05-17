@@ -12,7 +12,7 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR AddNumbers
 
-COPY --from=MAVEN_BUILD /build/target/addnumbers.jar /app/
+ADD /target/addnumbers.jar addnumbers.jar
 
 ENTRYPOINT ["java", "-jar", "addnumbers.jar"]
 
